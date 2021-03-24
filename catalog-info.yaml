@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "rp-test-service"
+  description: Test Service
+  annotations:
+    # This must match folder-name/job-name in Jenkins.
+    jenkins.io/github-folder: 'HMCTS_rp/rp-test-service'
+    github.com/project-slug: 'hmcts/rpe-test-template'
+  tags:
+    - java
+    - rp
+spec:
+  type: service
+  lifecycle: experimental
+  owner: rpe
